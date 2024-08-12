@@ -20,10 +20,19 @@ a {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 .grid {
   display: grid;
+  grid-gap: 64px;
+}
+
+.grid-2-c {
+  grid-template-columns: auto auto;
+}
+
+.grid-3-c-first {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
@@ -31,6 +40,12 @@ section {
   max-width: 1400px;
   margin: 0 auto;
 }
+
+.img-responsive {
+  max-width: 100%;
+}
+
+/* header */
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../img/oeschinensee.jpg");
@@ -73,6 +88,48 @@ header a {
   display: inline-block;
 }
 
+/* main */
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: var(--color1);
+  margin: 0;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color1);
+  opacity: 0.7;
+}
+
+.story img {
+  width: 550px;
+  height: 381px;
+}
+
+.story {
+  align-items: center;
+}
+
 /* footer */
 
 footer {
@@ -80,7 +137,6 @@ footer {
   background-image: linear-gradient(rgba(63, 68, 70, 0.9), rgba(63, 68, 70, 0.9)), url(../img/oeschinensee-footer.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
 }
 
 footer h3 {
@@ -93,7 +149,6 @@ footer p {
   font-weight: 400;
   font-size: 16px;
   opacity: 0.7;
-  margin-right: 20px;
   line-height: 24px;
 }
 
@@ -127,5 +182,19 @@ footer a {
 
   header h3 {
     font-size: 13px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .story img {
+    width: 450px;
+    height: 250px;
   }
 }
