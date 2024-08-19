@@ -1,5 +1,8 @@
 :root {
-  --color1: rgb(63, 68, 70);
+  --color1: rgb(73, 79, 82);
+  --color2: rgb(207, 213, 215, 0.3);
+  --color3: #272044;
+  --color4: #393642;
 }
 
 body {
@@ -9,7 +12,9 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   margin: 0
 }
 
@@ -18,9 +23,9 @@ a {
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
 }
 
 .grid {
@@ -36,6 +41,10 @@ section {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.grid-3-c {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -43,6 +52,11 @@ section {
 
 .img-responsive {
   max-width: 100%;
+  display: block;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* header */
@@ -99,7 +113,7 @@ main h2 {
   line-height: 1.5;
   margin: 0;
   letter-spacing: 5px;
-  color: #272044;
+  color: var(--color3);
   opacity: 0.3;
   text-transform: uppercase;
 }
@@ -110,6 +124,20 @@ main h3 {
   line-height: 1.5;
   color: var(--color1);
   margin: 0;
+}
+
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--color1);
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  color: var(--color1);
 }
 
 main p {
@@ -128,6 +156,38 @@ main p {
 
 .story {
   align-items: center;
+}
+
+/* card */
+
+.second {
+  background-color: var(--color2);
+}
+
+.card {
+  background-color: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 5px 30px 30px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: var(--color4);
 }
 
 /* footer */
