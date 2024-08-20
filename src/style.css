@@ -60,6 +60,7 @@ section {
   text-align: center;
 }
 
+
 /* header */
 
 header {
@@ -167,7 +168,7 @@ main p {
 
 .embed {
   width: 100%;
-  height: 100%;
+  height: auto;
   aspect-ratio: 1 / 1;
 }
 
