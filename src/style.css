@@ -294,6 +294,16 @@ footer a:hover {
     font-size: 13px;
   }
 
+  header a {
+    padding: 10px 15px;
+    font-size: 10px;
+  }
+
+  header a:hover {
+    border: 2px white solid;
+    padding: 8px 13px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
